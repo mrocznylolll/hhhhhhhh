@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/titleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tytuł notatki"
+        android:paddingTop="10dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/noteInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Treść notatki" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz notatkę" />
+
+    <EditText
+        android:id="@+id/deleteIdInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID do usunięcia (opcjonalne)" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuń notatkę (opcjonalnie)" />
+
+    <EditText
+        android:id="@+id/updateIdInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID do aktualizacji" />
+
+    <EditText
+        android:id="@+id/updateNoteInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nowa treść notatki" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aktualizuj notatkę" />
+
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brak notatek. Dodaj pierwszą!"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
